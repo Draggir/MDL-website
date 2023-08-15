@@ -1,0 +1,408 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column; /* Afficher les éléments en colonne */
+  padding: 8px 10px;
+  background-color: #ffffff;
+  height: 100px;
+  border-bottom: 2px solid #cccccc;
+  border-radius: 15px;
+}
+
+.navbar__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu-icon {
+  font-size: 16px;
+  color: rgb(0, 214, 186);
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.navbar__book-icon {
+  font-size: 24px;
+  color: rgb(0, 214, 186);
+  margin-right: 5px;
+  margin-left: 2px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.navbar__lmd {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(0, 214, 186);
+  margin-left: 4px;
+}
+
+.navbar__user-icon {
+  font-size: 16px;
+  color: rgb(0, 214, 186);
+  margin-right: 5px;
+}
+
+.navbar__search-icon {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(0, 214, 186);
+}
+
+.navbar__logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 214, 186);
+}
+
+.navbar__search-container {
+  position: relative;
+  display: none;
+}
+
+.navbar__search-container.visible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.navbar__search {
+  width: 250px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 2px solid #cccccc;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.navbar__search:focus {
+  font-size: 18px;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar__menu-icon:hover,
+.navbar__book-icon:hover,
+.navbar__lmd:hover,
+.navbar__search-icon:hover,
+.navbar__user-icon:hover{
+  transform: scale(1.5);
+}
+
+
+.navbar__menu {
+  position: absolute;
+  top: 64px;
+  left: -300px;
+  width: 300px;
+  height: 450px;
+  background-image: url('images/menu-background.jpg');
+  background-size: cover;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease-in-out;
+  margin-top: -60px;
+  z-index: 100;
+}
+.navbar__menu .menu-title{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.navbar__menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__menu ul li {
+  width: 100%;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 0px;
+}
+
+.navbar__menu ul li a {
+  display: block;
+  padding: 10px 5px;
+  color: rgb(255, 255, 255); /* Couleur du texte verte */
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.navbar__menu ul li a i{
+  text-align: center;
+  padding-right: 10px;
+}
+.navbar__menu ul li:hover a{
+  background: rgb(3, 161, 140);
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+
+.navbar__menu.visible {
+  left: 0;
+}
+
+.navbar__menu a:hover {
+  background-color: rgba(0, 214, 186, 0.1);
+}
+
+.categories-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.categories-slider {
+  display: flex;
+  overflow-x: auto; /* Défilement horizontal uniquement si nécessaire */
+  -webkit-overflow-scrolling: touch; /* Améliore le défilement sur iOS */
+}
+
+.category-button {
+  flex-shrink: 0;
+  padding: 10px 15px; /* Ajustez la taille des boutons */
+  border: 2px solid #cccccc;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  margin-right: 10px;
+  white-space: nowrap; /* Empêche le retour à la ligne des boutons */
+  transition: background-color 0.3s, color 0.3s; /* Transition douce pour les effets */
+
+}
+
+/* ... le reste du code CSS reste le même ... */
+
+.category-button i {
+  margin-right: 5px; /* Espacement entre l'icône et le texte */
+  font-size: 16px; /* Taille de l'icône */
+  color: rgb(0, 214, 186); /* Couleur de l'icône */
+}
+
+.category-button:hover {
+  background-color: rgb(1, 167, 145); /* Couleur de fond au survol */
+  color: #fff; /* Couleur du texte au survol */
+}
+.category-button:hover i {
+  color: #fff; /* Couleur du texte au survol */
+}
+
+/* ... Autres styles ... */
+
+.categories-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0;
+}
+
+.category-button {
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Ajout de la transition */
+}
+
+.category-button:hover {
+  transform: scale(1.1); /* Appliquer un zoom au survol */
+}
+
+/* ... Autres styles ... */
+
+.popular-books {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(0, 214, 186);
+  margin-bottom: 20px;
+}
+
+.books-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.book img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-details {
+  flex: 1;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.book-author {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.book-genre,
+.book-rating {
+  font-size: 14px;
+  color: #999;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.book-rating {
+  font-size: 16px;
+  color: #f39c12; /* Couleur orange pour les étoiles */
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  margin-right: 2px;
+  color: #f39c12;
+}
+
+.slider-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(0, 214, 186); /* Couleur de texte */
+  margin-bottom: 20px; /* Espace en bas du titre */
+}
+
+.books-slider {
+  flex: 1 1 42rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.books-slider a img{
+  width: 60%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.books-slider a:hover img{
+  transform: scale(.9);
+}
+.books-slider .stand{
+  width: 100%;
+  margin-top: -7rem;
+}
+
+/* Autres styles ... */
+
+/* Autres styles ... */
+
+/* Autres styles ... */
+
+.footer {
+  background-color: rgb(0, 214, 186);
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Changement de direction pour centrer verticalement */
+  align-items: center; /* Centrer horizontalement */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrer les icônes horizontalement */
+  margin-top: 10px; /* Espace entre le slogan et les icônes */
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px; /* Espace entre les icônes */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateX(5px); /* Faites le décalage dans l'autre sens pour le survol */
+  color: rgb(0, 0, 0);
+}
+
+.footer-slogan {
+  text-align: center;
+  margin-top: 20px; /* Espace entre les icônes et le slogan */
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.footer-copyright {
+  margin-top: 20px; /* Espace entre le slogan et le copyright */
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+/* Autres styles ... */
