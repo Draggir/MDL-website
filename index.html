@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+    <title> La Maison du Livre</title>
+</head>
+<body>
+    <nav class="navbar">
+      <div class="navbar__content">
+        <div class="navbar__left">
+          <a href="#" class="navbar__menu-icon" id="menu-icon-open">
+            <i class="fas fa-bars"></i>
+          </a>
+          <a href="#" class="navbar__book-icon">
+            <i class="fas fa-book"></i>
+          </a>
+          <span class="navbar__lmd">LMD</span>
+        </div>
+        <div class="navbar__right">
+          <a href="#" class="navbar__search-icon">
+            <i class="fas fa-search"></i>
+          <a href="login.html" class="navbar__user-icon">
+            <i class="fas fa-user"></i>
+          </a>
+          </a>
+        </div>
+      </div>
+        <div class="categories-container">
+          <div class="categories-slider" id="categoriesSlider">
+            <button class="category-button"><i class="fas fa-fire"></i> Populaires</button>
+            <button class="category-button"><i class="fas fa-chart-line"></i> Tendances</button>
+            <button class="category-button"><i class="fas fa-star"></i> Nouveautés</button>
+            <button class="category-button"><i class="fas fa-thumbs-up"></i> Sélections</button>
+            <button class="category-button"><i class="fas fa-shopping-cart"></i> Ventes</button>
+            <button class="category-button"><i class="fas fa-compass"></i> Découvertes</button>
+          </div>
+        </div>
+        
+        <div class="navbar__menu">
+          <div class="menu-title">
+            <a href="#" class="navbar__menu-icon" id="menu-icon-close">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+            </a>
+            <ul>
+              <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+              <li><a href="categories.html"><i class="fas fa-qrcode"></i>Catégories</a></li>
+              <li><a href="authors.html"><i class="fas fa-user"></i>Auteurs</a></li>
+              <li><a href="citations.html"><i class="fas fa-comment"></i>Citations</a></li>
+              <li><a href="contacts.html"><i class="fas fa-envelope"></i>Contacts</a></li>
+              <li><a href="about.html"><i class="fas fa-info"></i>About</a></li>
+            </ul>
+        </div>
+
+
+      </nav>
+
+      <div class="navbar__search-container">
+        <input type="text" class="navbar__search" placeholder=" Rechercher...">
+      </div>
+      
+      <section class="popular-books">
+        <h2 class="section-title">Livres Populaires</h2>
+        <div class="books-container">
+          <div class="book">
+            <div class="book-details">
+              <h3 class="book-title">The Day You Begin</h3>
+              <p class="book-author">Colin Munro</p>
+              <p class="book-genre">Fiction</p>
+              <div class="book-rating">
+                <span class="star-icon"><i class="fas fa-star"></i></span>
+                <span class="star-icon"><i class="fas fa-star"></i></span>
+                <span class="star-icon"><i class="fas fa-star"></i></span>
+                <span class="star-icon"><i class="fas fa-star"></i></span>
+                <span class="star-icon"><i class="fas fa-star-half-alt"></i> 4.5/5</span>
+              </div>
+            </div>
+            <img src="images/book1.jpg" alt="Couverture du Livre 1">
+          </div>
+          <div class="book">
+            <div class="book-details">
+              <h3 class="book-title">Baking Class</h3>
+              <p class="book-author">Jason Holder</p>
+              <p class="book-genre">Cuisine</p>
+              <div class="book-rating">
+                <span class="star-icon"><i class="fas fa-star"></i></span>
+                <span class="star-icon"><i class="fas fa-star"></i></span>
+                <span class="star-icon"><i class="fas fa-star"></i></span>
+                <span class="star-icon"><i class="fas fa-star-half-alt"></i> 3.5/5</span>
+              </div>
+            </div>
+            <img src="images/book2.jpg" alt="Couverture du Livre 2">
+          </div>
+          <!-- Ajoutez d'autres livres ici -->
+        </div>
+      </section>
+      
+      <div class="swiper trends-cards">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide"><img src="images/book3.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/book4.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/book5.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/book6.jpg" alt=""></a>
+        </div>
+      </div>
+      
+      
+      <div class="books-slider">
+        <h3 class="slider-title" >Découvrez Nos Sélections</h3>
+        <div class="swiper Slider-1">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"><img src="images/book1.jpg" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="images/book2.jpg" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="images/book3.jpg" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="images/book4.jpg" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="images/book5.jpg" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="images/book6.jpg" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="images/book7.jpg" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="images/book8.jpg" alt=""></a>
+            <a href="#" class="swiper-slide"><img src="images/book9.jpg" alt=""></a>
+          </div>
+          <img src="images/stand.png" class="stand" alt="">
+        </div>
+      </div>
+      
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-social">
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="footer-slogan">Lire, Explorer, Grandir</p>
+    <p class="footer-copyright">&copy; 2023 LMD. Tous droits réservés.</p>
+  </footer>
+
+
+  
+
+  <script src="script.js"></script> <!-- Lier votre fichier script.js -->
+
+</body>
+</html>
