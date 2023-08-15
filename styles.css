@@ -299,10 +299,8 @@
   margin-bottom: 5px;
 }
 
-.book-genre,
-.book-rating {
+.book-genre{
   font-size: 14px;
-  color: #999;
 }
 
 .book:hover {

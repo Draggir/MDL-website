@@ -44,8 +44,3 @@ var swiper = new Swiper(".Slider-1", {
     },
   }
 });
-
-var swiper = new Swiper(".trends-cards", {
-  effect: "cards",
-  grabCursor: true,
-});
