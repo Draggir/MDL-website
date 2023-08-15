@@ -41,6 +41,21 @@ var swiper = new Swiper(".Slider-1", {
     },
     1024:{
       slidesPerView:3,
+      spaceBetween:0,
     },
   }
 });
+
+  var swiper = new Swiper(".citations-cards", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+  });
