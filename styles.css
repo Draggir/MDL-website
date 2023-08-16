@@ -240,6 +240,58 @@
   transform: scale(1.1); /* Appliquer un zoom au survol */
 }
 
+/* Services  */
+
+.services {
+  width: 100%;
+  height: auto;
+  margin: 35px 0;
+}
+
+.services .services-box {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permet le retour à la ligne des cartes */
+}
+
+.services .services-box .services-card {
+  text-align: center;
+  width: 310px;
+  height: auto;
+  box-shadow: 0 0 8px rgb(0, 214, 186);
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.services .services-box .services-card:hover{
+  transform: scale(1.03);
+}
+
+.services .services-box .services-card i:hover {
+  transform: translateY(-5px);
+}
+
+.services .services-box .services-card i {
+  color: rgb(0, 214, 186);
+  font-size: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.services .services-box .services-card h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.services .services-box .services-card p {
+  font-family: "Roboto", sans-serif;
+}
+
+
 /* ... Autres styles ... */
 
 .popular-books {
@@ -349,7 +401,8 @@
   margin-top: -7rem;
 }
 
-/* Autres styles ... */
+/* Services */
+
 
 
 
@@ -474,7 +527,7 @@
   
   .category-button span{
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     justify-content: center;
   }
