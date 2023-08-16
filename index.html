@@ -33,12 +33,12 @@
       </div>
         <div class="categories-container">
           <div class="categories-slider" id="categoriesSlider">
-            <button class="category-button"><i class="fas fa-fire"></i> Populaires</button>
-            <button class="category-button"><i class="fas fa-chart-line"></i> Tendances</button>
-            <button class="category-button"><i class="fas fa-star"></i> Nouveautés</button>
-            <button class="category-button"><i class="fas fa-thumbs-up"></i> Sélections</button>
-            <button class="category-button"><i class="fas fa-shopping-cart"></i> Ventes</button>
-            <button class="category-button"><i class="fas fa-compass"></i> Découvertes</button>
+            <button class="category-button"><i class="fas fa-fire"></i> <span>Populaires</span></button>
+            <button class="category-button"><i class="fas fa-chart-line"></i> <span>Tendances</span></button>
+            <button class="category-button"><i class="fas fa-star"></i> <span>Nouveautés</span></button>
+            <button class="category-button"><i class="fas fa-thumbs-up"></i> <span>Sélections</span></button>
+            <button class="category-button"><i class="fas fa-shopping-cart"></i> <span>Ventes</span></button>
+            <button class="category-button"><i class="fas fa-compass"></i> <span>Découvertes</span></button>
           </div>
         </div>
         
@@ -100,7 +100,7 @@
             <div class="book-details">
               <h3 class="book-title">The New Nigro</h3>
               <p class="book-author">Jequlin fed</p>
-              <p class="book-genre">Cuisine</p>
+              <p class="book-genre">Histoire</p>
               <div class="book-rating">
                 <span class="star-icon"><i class="fas fa-star"></i></span>
                 <span class="star-icon"><i class="fas fa-star"></i></span>
@@ -132,20 +132,137 @@
         </div>
       </div>
 
-      <h2 class="section-title">Citations célèbres</h2>
-      <section class="citations-slider">
-        <div class="citations-cards">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="citationsBox">
-                <img src="">
+      <div class="container">
+
+        <input type="radio" name="slider" id="s1">
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+
+        <div class="cards">
+          <label for="s1" id="slide1">
+            <div class="card">
+              <div class="image">
+                <img src="images/martin-luther-king.jpg" alt="Martin Luther King">
+                <div class="dots">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="infos">
+                <span class="name">Martin Luther King</span>
+                <span class="quote">Ce qui compte, chez un homme, ce n'est pas la couleur de sa peau ou la texture de sa chevelure, mais la texture et la qualité de son âme.</span>
+                <a href="#" class="btn-details">En savoir plus</a>
+                <div class="actions">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-heart"></i>
+                  <i class="fas fa-bookmark"></i>
+                  <i class="fas fa-share"></i>
+                </div>
               </div>
             </div>
-            </div>
-          </div>
-        </div>
+          </label>
 
-      </section>
+          <label for="s2" id="slide2">
+            <div class="card">
+              <div class="image">
+                <img src="images/gandhi.jpg" alt="Gandhi">
+                <div class="dots">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="infos">
+                <span class="name">Gandhi</span>
+                <span class="quote">Un plein effort est une pleine victoire." “C'est une erreur de croire nécessairement faux ce qu'on ne comprend pas. ” "Dès que quelqu'un comprend qu'il est contraire à sa dignité d'homme d'obéir à des lois injustes, aucune tyrannie ne peut l'asservir.” "Une once de pratique vaut mieux que des tonnes de discours."</span>
+                <a href="#" class="btn-details">En savoir plus</a>
+                <div class="actions">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-heart"></i>
+                  <i class="fas fa-bookmark"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </label>
+
+          <label for="s3" id="slide3">
+            <div class="card">
+              <div class="image">
+                <img src="images/bill-gates.jpg" alt="Bill Gates">
+                <div class="dots">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="infos">
+                <span class="name">Bill Gates</span>
+                <span class="quote">Vos clients les plus mécontents sont votre plus grande source d’apprentissage</span>
+                <a href="#" class="btn-details">En savoir plus</a>
+                <div class="actions">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-heart"></i>
+                  <i class="fas fa-bookmark"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </label>
+
+          <label for="s4" id="slide4">
+            <div class="card">
+              <div class="image">
+                <img src="images/naruto.jpg" alt="Bill Gates">
+                <div class="dots">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="infos">
+                <span class="name">Narruto Uzumaki</span>
+                <span class="quote">Le mensonge tue la confiance et surtout il te prive d'amis sur qui compter vraiment. Et pire que ça le mensonge t'empêche de te voir tel que tu es réellement.</span>
+                <a href="#" class="btn-details">En savoir plus</a>
+                <div class="actions">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-heart"></i>
+                  <i class="fas fa-bookmark"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </label>
+
+          <label for="s5" id="slide5">
+            <div class="card">
+              <div class="image">
+                <img src="images/bill-gates.jpg" alt="Bill Gates">
+                <div class="dots">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="infos">
+                <span class="name">Luffy</span>
+                <span class="quote">Ce n'est pas parce que je suis faible que je ne peux pas gagner. C'est parce que je ne veux pas te blesser que je te laisse gagner.</span>
+                <a href="#" class="btn-details">En savoir plus</a>
+                <div class="actions">
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-heart"></i>
+                  <i class="fas fa-bookmark"></i>
+                  <i class="fas fa-share"></i>
+                </div>
+              </div>
+            </div>
+          </label>
+
+        </div>
+      </div>
       
       <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

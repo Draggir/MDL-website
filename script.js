@@ -41,12 +41,11 @@ var swiper = new Swiper(".Slider-1", {
     },
     1024:{
       slidesPerView:3,
-      spaceBetween:0,
     },
   }
 });
 
-  var swiper = new Swiper(".citations-cards", {
+  var swiper = new Swiper(".swiper-container", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
