@@ -1,3 +1,10 @@
+:root{
+  --black:#444;
+  --border:.1rem solid rgba(0,0,0,.1);
+  --border-hover:.1rem solid var(--black);
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -401,10 +408,92 @@
   margin-top: -7rem;
 }
 
-/* Services */
+/* LIVRES TENDANCES */
 
+.heading{
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+}
 
+.heading::before{
+  content: '';
+  position: absolute;
+  top: 50%; left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: .01rem;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
 
+}
+
+.heading span{
+  font-size: 2rem;
+  padding: .5rem 2rem;
+  color: var(--black);
+  background: #fff;
+  border: var(--border);
+}
+
+.trends .trends-slider .box{
+  width: 25rem;
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  border: var(--border);
+  text-align: center;
+}
+
+.trends .trends-slider .box:hover{
+  border: var(--border-hover);
+}
+
+.trends .trends-slider .box .image{
+  padding: 1rem;
+  background: linear-gradient(15deg, #eee, #fff 30,1%);
+}
+
+.trends .trends-slider .box .image img{
+  height: 25rem;
+}
+
+.trends .trends-slider .box .icons{
+  border-bottom: var(--border-hover);
+  position: absolute;
+  left: 0; top: 0; right: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+
+}
+
+.trends .trends-slider .box .icons a{
+  color: var(--black);
+  font-size: 2.2rem;
+  padding: 1.5rem;
+}
+
+.trends .trends-slider .box .icons a:hover{
+  background: rgb(0, 214, 186);
+  color: #fff;
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .9rem 3rem;
+  border-radius: .5rem;
+  color: #fff;
+  background: rgb(0, 214, 186);
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn:hover{
+  background: rgb(1, 167, 145);
+}
 
 
 
@@ -541,5 +630,7 @@
   .category-button:hover {
     transform: scale(1.1);
   }
-
+  .section-title{
+    font-size: 3rem;
+  }
 }
