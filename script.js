@@ -39,7 +39,7 @@ var swiper = new Swiper(".Slider-1", {
   loop:true,
   centeredSlides: true,
   autoplay: {
-    delay:3000,
+    delay:9000,
     disableOnInteraction:false,
   },
   breakpoints: {
@@ -60,7 +60,7 @@ var swiper = new Swiper(".trends-slider", {
   loop:true,
   centeredSlides: true,
   autoplay: {
-    delay:3000,
+    delay:9000,
     disableOnInteraction:false,
   },
   navigation: {

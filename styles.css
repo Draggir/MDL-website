@@ -354,6 +354,10 @@
   margin-bottom: 5px;
 }
 
+.medal-icon{
+  color: #f39c12;
+}
+
 .book-author {
   font-size: 16px;
   color: #666;
