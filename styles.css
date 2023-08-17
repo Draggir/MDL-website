@@ -622,10 +622,74 @@ body {
 }
 
 
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem;
+}
 
+.footer .box-container .box{
+  padding-left: 3rem;
+}
 
+.footer .box-container .box h3{ 
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: rgb(0, 214, 186);
+  padding: 1rem 0;
+}
 
+.footer .box-container .box a{ 
+  display: block;
+  font-size: 1.1rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
 
+.footer .box-container .box a i{ 
+  color: rgb(0, 214, 186);
+  padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i{ 
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .map{
+  width: 60%;
+}
+
+.footer .share{
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer .share a{
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 3rem;
+  color: rgb(0, 214, 186);
+  margin: 0 .3rem;
+}
+
+.footer .share a:hover{
+  transform: scale(1.2);
+}
+
+.footer .credit{
+  border-top: var(--border);
+  margin-top: 2rem;
+  padding: 0 1rem;
+  padding-bottom: 2.5rem;
+  font-size: 2rem;
+  color: var(--light-color);
+  text-align: center;
+}
+
+.footer .credit span{
+  color: rgb(0, 214, 186);
+}
 
 
 
