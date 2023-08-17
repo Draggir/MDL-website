@@ -429,15 +429,16 @@
 }
 
 .heading span{
-  font-size: 2rem;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
   padding: .5rem 2rem;
-  color: var(--black);
+  color: rgb(0, 214, 186);
   background: #fff;
   border: var(--border);
 }
 
 .trends .trends-slider .box{
-  width: 25rem;
+  width: 15rem;
   margin: 2rem 0;
   position: relative;
   overflow: hidden;
@@ -455,7 +456,7 @@
 }
 
 .trends .trends-slider .box .image img{
-  height: 25rem;
+  height: 15rem;
 }
 
 .trends .trends-slider .box .icons{
@@ -473,7 +474,7 @@
 }
 
 .trends .trends-slider .box:hover .image{
-  transform: translateY(6rem);
+  transform: translateY(5rem);
 }
 
 .trends .trends-slider .box .icons a{
@@ -487,16 +488,60 @@
   color: #fff;
 }
 
+.trends .trends-slider .box .content{
+  background: #eee;
+  padding: 1.5rem;
+}
+
+.trends .trends-slider .box .content h3{
+  font-size: 24px;
+  color: var(--black);
+}
+
+.trends .trends-slider .box .content .price{
+  font-size: 2rem;
+  color: var(--black);
+  padding-top: 1rem;
+}
+
+.trends .trends-slider .box .content .price span{
+  font-size: 1rem;
+  color: var(--light-color);
+  padding-top: 1rem;
+  text-decoration: line-through;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  border: var(--border-hover);
+  height: 4rem;
+  width: 4rem;
+  color: var(--black);
+  background: #fff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+  color: var(--black);
+  color: #fff;
+}
+
 .btn{
   margin-top: 1rem;
   display: inline-block;
-  padding: .9rem 3rem;
+  padding: .3rem 1rem;
   border-radius: .5rem;
   color: #fff;
   background: rgb(0, 214, 186);
   font-size: 1.7rem;
   cursor: pointer;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .btn:hover{
@@ -523,8 +568,26 @@
 
 
 
+.loader-container{
+  position: fixed;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
 
+.loader-container.active{
+  display: none;
+}
+
+.loader-container img{
+height: 20rem;
+}
 
 
 

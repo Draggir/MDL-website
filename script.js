@@ -9,7 +9,7 @@ searchIcon.addEventListener('click', () => {
   } else {
     searchContainer.classList.add('visible');
   }
-  
+  fadeOut();
   isSearchVisible = !isSearchVisible; // Inverser l'état de la barre de recherche
 });
 
@@ -25,11 +25,21 @@ menuIconClose.addEventListener('click', () => {
   menu.classList.remove('visible');
 });
 
+function loader(){
+  document.querySelector('.loader-container').classList.add('active');
+}
+
+function fadeOut(){
+  setTimeout(loader, 4000);
+}
+
+fadeOut();
+
 var swiper = new Swiper(".Slider-1", {
   loop:true,
   centeredSlides: true,
   autoplay: {
-    delay:2000,
+    delay:3000,
     disableOnInteraction:false,
   },
   breakpoints: {
@@ -45,16 +55,32 @@ var swiper = new Swiper(".Slider-1", {
   }
 });
 
-  var swiper = new Swiper(".swiper-container", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
+var swiper = new Swiper(".trends-slider", {
+  spaceBetween:10,
+  loop:true,
+  centeredSlides: true,
+  autoplay: {
+    delay:3000,
+    disableOnInteraction:false,
+  },
+  navigation: {
+    nextEl:".swiper-button-next",
+    prevEl:".swiper-button-prev",
+  },
+  breakpoints: {
+    0:{
+      slidesPerView:1,
     },
-  });
+
+    450:{
+      slidesPerView:2,
+    },
+
+    768:{
+      slidesPerView:3,
+    },
+    1024:{
+      slidesPerView:4,
+    },
+  }
+});
