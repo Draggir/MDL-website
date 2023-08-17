@@ -83,6 +83,7 @@ var swiper = new Swiper(".trends-slider", {
 });
 
 var swiper = new Swiper(".arrivals-slider", {
+  loop:true,
   spaceBetween:10,
   centeredSlides: true,
   autoplay: {
