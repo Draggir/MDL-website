@@ -380,18 +380,10 @@
   color: #f39c12;
 }
 
-.slider-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  color: rgb(0, 214, 186); /* Couleur de texte */
-  margin-bottom: 20px; /* Espace en bas du titre */
-}
-
 .books-slider {
   flex: 1 1 42rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 0;
 }
 .books-slider a img{
@@ -430,6 +422,7 @@
 
 .heading span{
   font-size: 20px;
+  font-weight: bold;
   font-family: 'Poppins', sans-serif;
   padding: .5rem 2rem;
   color: rgb(0, 214, 186);
@@ -438,7 +431,7 @@
 }
 
 .trends .trends-slider .box{
-  width: 15rem;
+  width: 10rem;
   margin: 2rem 0;
   position: relative;
   overflow: hidden;
@@ -456,7 +449,7 @@
 }
 
 .trends .trends-slider .box .image img{
-  height: 15rem;
+  height: 20rem;
 }
 
 .trends .trends-slider .box .icons{
@@ -474,13 +467,14 @@
 }
 
 .trends .trends-slider .box:hover .image{
-  transform: translateY(5rem);
+  transform: translateY(4rem);
 }
 
 .trends .trends-slider .box .icons a{
   color: var(--black);
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   padding: 1.3rem 1.5rem;
+  text-decoration: none;
 }
 
 .trends .trends-slider .box .icons a:hover{
@@ -508,6 +502,7 @@
   font-size: 1rem;
   color: var(--light-color);
   padding-top: 1rem;
+  padding-left: .5rem;
   text-decoration: line-through;
 }
 
@@ -534,7 +529,7 @@
 .btn{
   margin-top: 1rem;
   display: inline-block;
-  padding: .3rem 1rem;
+  padding: .6rem 2rem;
   border-radius: .5rem;
   color: #fff;
   background: rgb(0, 214, 186);
@@ -545,7 +540,7 @@
 }
 
 .btn:hover{
-  background: rgb(1, 167, 145);
+  background: var(--black);
 }
 
 
@@ -702,6 +697,10 @@ height: 20rem;
     transform: scale(1.1);
   }
   .section-title{
+    font-size: 3rem;
+  }
+
+  .heading span{
     font-size: 3rem;
   }
 }
