@@ -465,13 +465,21 @@
   width: 100%;
   background: #fff;
   z-index: 1;
+  transform: translateY(-100%);
+}
 
+.trends .trends-slider .box:hover .icons{
+  transform: translateY(0%);
+}
+
+.trends .trends-slider .box:hover .image{
+  transform: translateY(6rem);
 }
 
 .trends .trends-slider .box .icons a{
   color: var(--black);
   font-size: 2.2rem;
-  padding: 1.5rem;
+  padding: 1.3rem 1.5rem;
 }
 
 .trends .trends-slider .box .icons a:hover{
