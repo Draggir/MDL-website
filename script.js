@@ -79,8 +79,24 @@ var swiper = new Swiper(".trends-slider", {
     768:{
       slidesPerView:3,
     },
+  }
+});
+
+var swiper = new Swiper(".arrivals-slider", {
+  loop:true,
+  spaceBetween:10,
+  centeredSlides: true,
+  autoplay: {
+    delay:9000,
+    disableOnInteraction:false,
+  },
+  breakpoints: {
+    0:{
+      slidesPerView:1,
+    },
+
     1024:{
-      slidesPerView:4,
+      slidesPerView:3,
     },
   }
 });

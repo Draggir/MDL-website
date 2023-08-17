@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
 :root{
   --black:#444;
+  --light-color:#666;
   --border:.1rem solid rgba(0,0,0,.1);
   --border-hover:.1rem solid var(--black);
   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  transition: width none;
 }
 
 .navbar {
@@ -12,7 +25,7 @@
   flex-direction: column; /* Afficher les éléments en colonne */
   padding: 8px 10px;
   background-color: #ffffff;
-  height: 100px;
+  height: 110px;
   border-bottom: 2px solid #cccccc;
   border-radius: 15px;
 }
@@ -182,7 +195,7 @@
 .categories-container {
   overflow: hidden;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .categories-slider {
@@ -247,6 +260,38 @@
   transform: scale(1.1); /* Appliquer un zoom au survol */
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.welcome-message {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.message-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.message-content h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.message-content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Ajouter d'autres styles si nécessaire */
+
+
 /* Services  */
 
 .services {
@@ -290,13 +335,9 @@
 }
 
 .services .services-box .services-card h3 {
-  font-family: "Roboto", sans-serif;
   margin-bottom: 10px;
 }
 
-.services .services-box .services-card p {
-  font-family: "Roboto", sans-serif;
-}
 
 
 /* ... Autres styles ... */
@@ -306,14 +347,6 @@
   text-align: center;
 }
 
-.section-title {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 28px;
-  font-weight: bold;
-  color: rgb(0, 214, 186);
-  margin-bottom: 20px;
-}
 
 .books-container {
   display: flex;
@@ -409,6 +442,7 @@
 .heading{
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 3rem;
   position: relative;
 }
 
@@ -488,25 +522,24 @@
 
 .trends .trends-slider .box .content{
   background: #eee;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .trends .trends-slider .box .content h3{
-  font-size: 24px;
+  font-size: 20px;
   color: var(--black);
 }
 
 .trends .trends-slider .box .content .price{
-  font-size: 2rem;
+  font-size: 20px;
   color: var(--black);
-  padding-top: 1rem;
+  padding-top: .5rem;
 }
 
 .trends .trends-slider .box .content .price span{
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--light-color);
   padding-top: 1rem;
-  padding-left: .5rem;
   text-decoration: line-through;
 }
 
@@ -522,6 +555,7 @@
 .swiper-button-next::after,
 .swiper-button-prev::after{
   font-size: 2rem;
+  color: rgb(0, 214, 186);
 }
 
 .swiper-button-next:hover,
@@ -533,7 +567,7 @@
 .btn{
   margin-top: 1rem;
   display: inline-block;
-  padding: .6rem 2rem;
+  padding: .3rem 1rem;
   border-radius: .5rem;
   color: #fff;
   background: rgb(0, 214, 186);
@@ -546,6 +580,51 @@
 .btn:hover{
   background: var(--black);
 }
+
+/* LIVRES TENDANCES */
+.arrivals .arrivals-slider .box{
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+ padding: 1rem .5rem;
+ border: var(--border);
+ margin: 1rem 0;
+}
+
+.arrivals .arrivals-slider .box:hover{
+  border: var(--border-hover);
+}
+
+.arrivals .arrivals-slider .box .image img{
+  height: 9rem;
+}
+
+.arrivals .arrivals-slider .box .content h3{
+  font-size: 24px;
+  color: var(--black);
+}
+
+.arrivals .arrivals-slider .box .content .price{
+  font-size: 22px;
+  color: var(--black);
+  padding-bottom: .5rem;
+}
+
+.arrivals .arrivals-slider .box .content .second-price{
+  font-size: 16px;
+  color: var(--light-color);
+  text-decoration: line-through;
+}
+
+.arrivals .arrivals-slider .box .content .stars i{
+  font-size: 1rem;
+  color: rgb(0, 214, 186);
+}
+
+
+
+
+
 
 
 
@@ -663,7 +742,7 @@ height: 20rem;
   .categories-container {
     overflow: hidden;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   .categories-slider {
@@ -699,9 +778,6 @@ height: 20rem;
   
   .category-button:hover {
     transform: scale(1.1);
-  }
-  .section-title{
-    font-size: 3rem;
   }
 
   .heading span{
