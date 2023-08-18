@@ -1,11 +1,38 @@
-.title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    color: rgb(0, 214, 186); /* Couleur de texte */
-    margin-bottom: 20px; /* Espace en bas du titre */
-  }
-.body img{
-    width: 100px;
-    height: auto;
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url('images/building.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
 }

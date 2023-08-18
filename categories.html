@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Users/loufa/Desktop/MDL/css/categories.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>En Développement</title>
+  <link rel="stylesheet" href="categories.css">
 </head>
 <body>
-    <div class="header"></div>
-    <div class="title">
-        <h3>Tous les livres</h3>
-        <img src="/Users/loufa/Desktop/MDL/images/Reading book-pana.png" alt="">
-    </div>
+  <div class="container">
+    <p class="message">Cette page est en développement et n'est pas encore disponible.</p>
+    <button class="button" onclick="goBack()">Retour</button>
+    <button class="button" onclick="goHome()">Accueil</button>
+  </div>
 
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function goHome() {
+      window.location.href = "/";
+    }
+  </script>
 </body>
 </html>

@@ -20,7 +20,7 @@
           <a href="#" class="navbar__book-icon">
             <i class="fas fa-book"></i>
           </a>
-          <span class="navbar__lmd">LMD</span>
+          <span class="navbar__lmd">Lireella</span>
         </div>
         <div class="navbar__right">
           <a href="#" class="navbar__search-icon">
@@ -33,13 +33,12 @@
       </div>
         <div class="categories-container">
           <div class="categories-slider" id="categoriesSlider">
-            <button class="category-button"><i class="fas fa-fire"></i> <span>Populaires</span></button>
-            <button class="category-button"><i class="fas fa-chart-line"></i> <span>Tendances</span></button>
-            <button class="category-button"><i class="fas fa-star"></i> <span>Nouveautés</span></button>
-            <button class="category-button"><i class="fas fa-thumbs-up"></i> <span>Sélections</span></button>
+            <button class="category-button" onclick="scrollToSection('popular')"><i class="fas fa-fire"></i> <span>Populaires</span></button>
+            <button class="category-button" onclick="scrollToSection('trends')"><i class="fas fa-chart-line"></i> <span>Tendances</span></button>
+            <button class="category-button"><i class="fas fa-star" onclick="scrollToSection('news-arrivals')"></i> <span>Nouveautés</span></button>
             <button class="category-button"><i class="fas fa-shopping-cart"></i> <span>Blog</span></button>
             <button class="category-button"><i class="fas fa-comment"></i> <span>Avis</span></button>
-            <button class="category-button"><i class="fas fa-headset"></i> <span>Services</span></button>
+            <button class="category-button" onclick="scrollToSection('services')"><i class="fas fa-headset"></i> <span>Services</span></button>
           </div>
         </div>
         
@@ -67,14 +66,18 @@
 
       <div class="welcome-message">
         <div class="message-content">
-          <h1>Bienvenue chez LMD</h1>
-          <p>Plongez dans un monde de découvertes littéraires avec LMD ! Explorez des milliers de livres, des classiques intemporels aux nouvelles parutions, le tout à portée de clic. Profitez d'une expérience de lecture numérique sans pareille et laissez-vous emporter par l'art de l'imagination.</p>
+          <h1>Bienvenue chez Lireela</h1>
+          <p>Plongez dans un monde de découvertes littéraires avec Lireela ! Explorez des milliers de livres, des classiques intemporels aux nouvelles parutions, le tout à portée de clic. Profitez d'une expérience de lecture numérique sans pareille et laissez-vous emporter par l'art de l'imagination.</p>
           <p>Bienvenue dans l'univers infini des mots et des histoires.</p>
         </div>
       </div>
 
+      <section class="home" id="home">
+
+      </section>
+
       <section class="popular-books">
-        <h2 class="heading"><span>Livres Populaires</span></h2>
+        <h2 class="heading" id="popular"><span>Livres Populaires</span></h2>
         <div class="books-container">
           <div class="book">
             <div class="book-details">
@@ -168,7 +171,7 @@
                 <a href="#" class="fas fa-share"></a>
               </div>
               <div class="image">
-                <img src="images/book10.jpg" alt="">
+                <img src="images/book1.jpg" alt="">
               </div>
               <div class="content">
                 <h3>Livres à la Une</h3>
@@ -184,7 +187,7 @@
                 <a href="#" class="fas fa-share"></a>
               </div>
               <div class="image">
-                <img src="images/book11.jpg" alt="">
+                <img src="images/book2.jpg" alt="">
               </div>
               <div class="content">
                 <h3>Livres à la Une</h3>
@@ -200,7 +203,7 @@
                 <a href="#" class="fas fa-share"></a>
               </div>
               <div class="image">
-                <img src="images/book10.jpg" alt="">
+                <img src="images/book3.jpg" alt="">
               </div>
               <div class="content">
                 <h3>Livres à la Une</h3>
@@ -216,7 +219,7 @@
                 <a href="#" class="fas fa-share"></a>
               </div>
               <div class="image">
-                <img src="images/book12.jpg" alt="">
+                <img src="images/book4.jpg" alt="">
               </div>
               <div class="content">
                 <h3>Livres à la Une</h3>
@@ -232,7 +235,7 @@
                 <a href="#" class="fas fa-share"></a>
               </div>
               <div class="image">
-                <img src="images/book14.jpg" alt="">
+                <img src="images/book5.jpg" alt="">
               </div>
               <div class="content">
                 <h3>Livres à la Une</h3>
@@ -248,7 +251,7 @@
                 <a href="#" class="fas fa-share"></a>
               </div>
               <div class="image">
-                <img src="images/book11.jpg" alt="">
+                <img src="images/book6.jpg" alt="">
               </div>
               <div class="content">
                 <h3>Livres à la Une</h3>
@@ -264,7 +267,7 @@
                 <a href="#" class="fas fa-share"></a>
               </div>
               <div class="image">
-                <img src="images/book10.jpg" alt="">
+                <img src="images/book7.jpg" alt="">
               </div>
               <div class="content">
                 <h3>Livres à la Une</h3>
@@ -280,7 +283,7 @@
                 <a href="#" class="fas fa-share"></a>
               </div>
               <div class="image">
-                <img src="images/book11.jpg" alt="">
+                <img src="images/book8.jpg" alt="">
               </div>
               <div class="content">
                 <h3>Livres à la Une</h3>
@@ -296,7 +299,7 @@
                 <a href="#" class="fas fa-share"></a>
               </div>
               <div class="image">
-                <img src="images/book12.jpg" alt="">
+                <img src="images/book9.jpg" alt="">
               </div>
               <div class="content">
                 <h3>Livres à la Une</h3>
@@ -312,7 +315,7 @@
       </section>
 
       <section class="arrivals" id="arrivals">
-        <h1 class="heading"><span>Dernières Arrivées</span></h1>
+        <h1 class="heading" id="news-arrivals"><span>Dernières Arrivées</span></h1>
         <div class="swiper arrivals-slider">
           <div class="swiper-wrapper">
 
@@ -507,25 +510,8 @@
 
       </section>
 
-      <div class="books-slider">
-        <h3 class="heading"><span>Nos Sélections </span></h3>
-        <div class="swiper Slider-1">
-          <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide"><img src="images/book1.jpg" alt=""></a>
-            <a href="#" class="swiper-slide"><img src="images/book2.jpg" alt=""></a>
-            <a href="#" class="swiper-slide"><img src="images/book3.jpg" alt=""></a>
-            <a href="#" class="swiper-slide"><img src="images/book4.jpg" alt=""></a>
-            <a href="#" class="swiper-slide"><img src="images/book5.jpg" alt=""></a>
-            <a href="#" class="swiper-slide"><img src="images/book6.jpg" alt=""></a>
-            <a href="#" class="swiper-slide"><img src="images/book7.jpg" alt=""></a>
-            <a href="#" class="swiper-slide"><img src="images/book8.jpg" alt=""></a>
-            <a href="#" class="swiper-slide"><img src="images/book9.jpg" alt=""></a>
-          </div>
-          <img src="images/stand.png" class="stand" alt="">
-        </div>
-      </div>
 
-      <h3 class="heading"><span>Services</span></h3>
+      <h3 class="heading" id="services"><span>Services</span></h3>
       <div class="services">
         <div class="services-box">
           <div class="services-card">

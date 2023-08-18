@@ -35,7 +35,14 @@ function fadeOut(){
 
 fadeOut();
 
-var swiper = new Swiper(".Slider-1", {
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+var swiper = new Swiper(".books-slider", {
   loop:true,
   centeredSlides: true,
   autoplay: {
@@ -47,10 +54,10 @@ var swiper = new Swiper(".Slider-1", {
       slidesPerView:1,
     },
     768:{
-      slidesPerView:2,
+      slidesPerView:1,
     },
     1024:{
-      slidesPerView:3,
+      slidesPerView:1,
     },
   }
 });
