@@ -289,22 +289,19 @@ body {
   min-height: 640px;
   display: flex;
   align-items: center;
-  background: url(images/banner-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   overflow: hidden;
+  border: var(--border);
 }
 
 .container img{
-  width: 600px;
+  width: 300px;
   position: absolute;
-  bottom: 70px;
-  right: 100px;
+  bottom: 50px;
 }
 
 .home-text{
-  padding: 0 150px;
+  padding: 0 30px;
+  padding-top: 50px;
 }
 
 .home-text span{
@@ -314,7 +311,7 @@ body {
 }
 
 .home-text h1{
-  font-size: 2rem;
+  font-size: 22px;
   font-weight: 400;
   margin-bottom: 1rem;
 }
@@ -455,7 +452,7 @@ body {
 }
 
 .trends .trends-slider .box{
-  width: 10rem;
+  width: 1rem;
   margin: 2rem 0;
   position: relative;
   overflow: hidden;
@@ -473,7 +470,7 @@ body {
 }
 
 .trends .trends-slider .box .image img{
-  height: 20rem;
+  height: 10rem;
 }
 
 .trends .trends-slider .box .icons{
@@ -496,8 +493,8 @@ body {
 
 .trends .trends-slider .box .icons a{
   color: var(--black);
-  font-size: 1.5rem;
-  padding: 1.3rem 1.5rem;
+  font-size: 1rem;
+  padding: 1rem 1.2rem;
   text-decoration: none;
 }
 
@@ -517,16 +514,9 @@ body {
 }
 
 .trends .trends-slider .box .content .price{
-  font-size: 20px;
+  font-size: 18px;
   color: var(--black);
   padding-top: .5rem;
-}
-
-.trends .trends-slider .box .content .price span{
-  font-size: 16px;
-  color: var(--light-color);
-  padding-top: 1rem;
-  text-decoration: line-through;
 }
 
 .swiper-button-next,
@@ -550,7 +540,7 @@ body {
 .btn{
   margin-top: 1rem;
   display: inline-block;
-  padding: .3rem 1rem;
+  padding: .01rem 0.3rem;
   border-radius: .5rem;
   color: #fff;
   background: rgb(0, 214, 186);
@@ -846,6 +836,57 @@ height: 20rem;
   
   .category-button:hover {
     transform: scale(1.1);
+  }
+
+  .container img{
+    width: 500px;
+    position: absolute;
+    bottom: 70px;
+    right: 100px;
+  }
+  
+  .home-text{
+    padding: 0 150px;
+    padding-top: 50px;
+  }
+  
+  .home-text span{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(0, 214, 186);
+  }
+  
+  .home-text h1{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  
+  .btn1{
+    padding: 0.6rem 1rem;
+    background: rgb(0, 214, 186);
+    color: #fff;
+    font-weight: 400;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 00.5rem;
+    max-width: 160px;
+  }
+  
+  .btn1 i{
+    padding: 4px;
+    background: #fff;
+    color: black;
+    border-radius: 1rem;
+    font-size: 20px;
+    margin: auto;
+  }
+  
+  .btn1:hover{
+    background: var(--black);
+    transition: 0.2s ease;
   }
 
   .heading span{
