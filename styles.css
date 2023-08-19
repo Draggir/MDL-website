@@ -281,6 +281,71 @@ body {
   line-height: 1.5;
 }
 
+/* ... home ... */
+
+.container{
+  position: relative;
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+  background: url(images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.container img{
+  width: 600px;
+  position: absolute;
+  bottom: 70px;
+  right: 100px;
+}
+
+.home-text{
+  padding: 0 150px;
+}
+
+.home-text span{
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(0, 214, 186);
+}
+
+.home-text h1{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.btn1{
+  padding: 0.6rem 1rem;
+  background: rgb(0, 214, 186);
+  color: #fff;
+  font-weight: 400;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 00.5rem;
+  max-width: 160px;
+}
+
+.btn1 i{
+  padding: 4px;
+  background: #fff;
+  color: black;
+  border-radius: 1rem;
+  font-size: 20px;
+  margin: auto;
+}
+
+.btn1:hover{
+  background: var(--black);
+  transition: 0.2s ease;
+}
+
 /* ... Popular ... */
 
 .popular-books {
@@ -466,11 +531,9 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev{
-  border: var(--border-hover);
   height: 4rem;
   width: 4rem;
   color: var(--black);
-  background: #fff;
 }
 
 .swiper-button-next::after,
@@ -482,7 +545,6 @@ body {
 .swiper-button-next:hover,
 .swiper-button-prev:hover{
   color: var(--black);
-  color: #fff;
 }
 
 .btn{

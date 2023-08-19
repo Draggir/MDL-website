@@ -42,12 +42,16 @@ function scrollToSection(sectionId) {
   }
 }
 
-var swiper = new Swiper(".books-slider", {
+var swiper = new Swiper(".home", {
   loop:true,
   centeredSlides: true,
   autoplay: {
     delay:9000,
     disableOnInteraction:false,
+  },
+  navigation: {
+    nextEl:".swiper-button-next",
+    prevEl:".swiper-button-prev",
   },
   breakpoints: {
     0:{
