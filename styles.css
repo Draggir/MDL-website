@@ -76,48 +76,44 @@
   margin-right: 5px;
 }
 
-.navbar__search-icon {
+.navbar__heart-icon {
   margin-right: 10px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 24px;
   color: rgb(0, 214, 186);
-}
-
-.navbar__search-container {
-  position: relative;
-  display: none;
-}
-
-.navbar__search-container.visible {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.navbar__search {
-  width: 250px;
-  height: 32px;
-  padding: 8px;
-  border-radius: 20px;
-  border: 2px solid #cccccc;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-}
-
-.navbar__search:focus {
-  font-size: 18px;
-  outline: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar__menu-icon:hover,
 .navbar__book-icon:hover,
-.navbar__search-icon:hover,
+.navbar__heart-icon:hover
 .navbar__user-icon:hover{
   transform: scale(1.5);
+}
+
+.search-form{
+  width: 15rem;
+  height: 2rem;
+  border: var(--border);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: .5rem;
+}
+
+.search-form input{
+  font-size: 18px;
+  padding: 0 .5rem;
+  height: 100%;
+  width: 100%;
+  text-transform: none;
+  color: var(--black);
+}
+.search-form label{
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: rgb(0, 214, 186);
+  cursor: pointer;
 }
 
 
@@ -593,45 +589,6 @@ body {
   font-size: 1rem;
   color: rgb(0, 214, 186);
 }
-
-/* reviews  */
-
-.reviews .reviews-slider .box{
-  width: 30rem;
-  border: var(--border);
-  padding: 2rem;
-  text-align: center;
-}
-
-.reviews .reviews-slider .box:hover{
-  border: var(--border-hover);
-}
-
-.reviews .reviews-slider .box img{
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.reviews .reviews-slider .box h3{
-  color: var(--black);
-  font-size: 2rem;
-  padding: .5rem 0;
-}
-
-.reviews .reviews-slider .box p{
-  color: var(--light-color);
-  font-size: 1rem;
-  padding: 1rem 0;
-  line-height: 2;
-}
-
-.reviews .reviews-slider .box .stars i{
-  font-size: 1rem;
-  color: rgb(0, 214, 186);
-}
-
 /* Services  */
 
 .services {
@@ -817,23 +774,39 @@ height: 20rem;
     margin-right: 10px;
   }
   
-  .navbar__search-icon {
+  .navbar__heart-icon {
     margin-right: 20px;
     text-decoration: none;
     font-size: 24px;
     color: rgb(0, 214, 186);
   }
 
-  .navbar__search {
-    width: 300px;
-    height: 48px;
-    padding: 8px;
-    border-radius: 20px;
-    border: 2px solid #cccccc;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 14px;
+  .search-form{
+    width: 30rem;
+    height: 3rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
   }
+  
+  .search-form input{
+    font-size: 22px;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+  }
+  .search-form label{
+    font-size: 1rem;
+    padding-right: 1rem;
+    color: rgb(0, 214, 186);
+    cursor: pointer;
+  }
+  
 
   .categories-container {
     overflow: hidden;
