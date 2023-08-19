@@ -391,7 +391,7 @@ body {
 }
 
 .medal-icon{
-  color: #f39c12;
+  color: rgb(0, 214, 186);
 }
 
 .book-author {
@@ -417,7 +417,7 @@ body {
 
 .star-icon {
   margin-right: 2px;
-  color: #f39c12;
+  color: rgb(0, 214, 186);
 }
 
 /* LIVRES TENDANCES */
@@ -590,6 +590,44 @@ body {
 }
 
 .arrivals .arrivals-slider .box .content .stars i{
+  font-size: 1rem;
+  color: rgb(0, 214, 186);
+}
+
+/* reviews  */
+
+.reviews .reviews-slider .box{
+  width: 30rem;
+  border: var(--border);
+  padding: 2rem;
+  text-align: center;
+}
+
+.reviews .reviews-slider .box:hover{
+  border: var(--border-hover);
+}
+
+.reviews .reviews-slider .box img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews .reviews-slider .box h3{
+  color: var(--black);
+  font-size: 2rem;
+  padding: .5rem 0;
+}
+
+.reviews .reviews-slider .box p{
+  color: var(--light-color);
+  font-size: 1rem;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.reviews .reviews-slider .box .stars i{
   font-size: 1rem;
   color: rgb(0, 214, 186);
 }
