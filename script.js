@@ -20,6 +20,11 @@ function fadeOut(){
 
 fadeOut();
 
+function closeWelcomeMessage() {
+  const welcomeMessage = document.querySelector('.welcome-message');
+  welcomeMessage.style.display = 'none';
+}
+
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
