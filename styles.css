@@ -113,8 +113,10 @@
 .search-form label{
   font-size: 1rem;
   padding-right: 1rem;
+  padding-left: .1rem;
   color: rgb(0, 214, 186);
   cursor: pointer;
+  border-left: .1rem solid var(--black);
 }
 
 
@@ -357,6 +359,63 @@ body {
   transition: 0.2s ease;
 }
 
+/* ... Book 3D Cover ... */
+.book-3d{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.book-3d .echobook{
+  position: relative;
+  width: 383px;
+  height: 567px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+.book-3d .echobook:hover{
+  transform: rotateY(35deg);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-3d .echobook:active{
+  transform: rotateY(180deg);
+}
+
+.book-3d .echobook::before{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  transform-origin: left;
+  background: url(images/side.jpg);
+  background-position: center;
+  transform: rotateY(90deg);
+}
+
+.book-3d .echobook::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  background: url(images/back.jpg);
+  background-position: center;
+  transform: rotateY(180deg) translateZ(60px);
+}
+
+.book-3d .echobook img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ... Popular ... */
 
 .popular-books {
@@ -433,6 +492,70 @@ body {
   margin-right: 2px;
   color: rgb(0, 214, 186);
 }
+
+/* bookshelf */
+   
+.selected-books .books-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptation automatique des colonnes */
+  gap: 20px; /* Espacement entre les cellules */
+}
+
+.book-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Retour à la ligne sur les petits écrans */
+
+}
+
+.book-cell {
+  flex: 1;
+  min-width: 200px; /* Largeur minimale des cellules */
+  margin: 10px;
+}
+
+.book-box {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.book-box img {
+  max-width: 90px; /* Taille maximale de l'image */
+  margin-right: 10px;
+}
+
+.book-info {
+  flex: 1;
+}
+
+
+.rating {
+  color: #f39c12;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.icons i {
+  font-size: 18px;
+  color: rgb(0, 214, 186);
+  margin-right: 10px;
+}
+
 
 /* LIVRES TENDANCES */
 
@@ -838,10 +961,12 @@ height: 20rem;
     color: var(--black);
   }
   .search-form label{
-    font-size: 1rem;
+    font-size: 22px;
     padding-right: 1rem;
+    padding-left: .6rem;
     color: rgb(0, 214, 186);
     cursor: pointer;
+    border-left: .1rem solid var(--black);
   }
   
 

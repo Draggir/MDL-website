@@ -10,6 +10,8 @@ menuIconClose.addEventListener('click', () => {
   menu.classList.remove('visible');
 });
 
+
+
 function loader(){
   document.querySelector('.loader-container').classList.add('active');
 }
