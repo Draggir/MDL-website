@@ -739,6 +739,24 @@ body {
 height: 20rem;
 }
 
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: none;
+  border: 2px solid rgb(0, 214, 186);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.scroll-icon {
+  font-size: 24px;
+  color: rgb(0, 214, 186);
+}
+
 
 
 

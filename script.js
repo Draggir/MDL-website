@@ -25,6 +25,11 @@ function closeWelcomeMessage() {
   welcomeMessage.style.display = 'none';
 }
 
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
