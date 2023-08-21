@@ -20,8 +20,6 @@ function fadeOut(){
   setTimeout(loader, 4000);
 }
 
-fadeOut();
-
 function closeWelcomeMessage() {
   const welcomeMessage = document.querySelector('.welcome-message');
   welcomeMessage.style.display = 'none';

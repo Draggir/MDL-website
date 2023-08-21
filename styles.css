@@ -365,6 +365,51 @@ body {
   transition: 0.2s ease;
 }
 
+
+.treasures-section {
+  padding: 20px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.treasures-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.treasure-box {
+  width: calc(25% - 20px);
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(to bottom right, rgb(0, 214, 186), #f4f4f4);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.treasure-box img {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.treasure-box h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.treasure-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+
 /* ... Popular ... */
 
 .popular-books {
@@ -935,7 +980,8 @@ height: 20rem;
   .book-row {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap; /* Retour à la ligne sur les petits écrans */
   
   }
@@ -945,6 +991,8 @@ height: 20rem;
     flex: 1;
     min-width: 250px; /* Largeur minimale des cellules */
     margin: 10px;
+    align-items:  center;
+    justify-content: center;
   }
   
   .book-box {
@@ -962,7 +1010,6 @@ height: 20rem;
   }
   
   .book-box img {
-    max-width: 100px; /* Taille maximale de l'image */
     margin-right: 6px;
   }
   
