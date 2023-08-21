@@ -151,7 +151,6 @@
   width: 100%;
   display: block;
   font-size: 20px;
-  padding: 8px;
   padding-left: 0px;
 }
 
@@ -497,7 +496,13 @@ body {
    
 .selected-books .books-container {
   background-color: #f4f4f4;
-  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 1000px; /* Ajustez cette valeur selon vos préférences */
+  margin: 0 auto; /* Centre le livre horizontalement dans son conteneur parent */
 }
 
 .books-grid {
@@ -515,12 +520,12 @@ body {
 
 .book-cell {
   flex: 1;
-  min-width: 200px; /* Largeur minimale des cellules */
+  min-width: 250px; /* Largeur minimale des cellules */
   margin: 10px;
 }
 
 .book-box {
-  background-color: #fff;
+  background-color: #FEFCFD;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 15px;
@@ -528,8 +533,12 @@ body {
   align-items: center;
 }
 
+.book-box:hover{
+  transform: scale(1.01);
+}
+
 .book-box img {
-  max-width: 90px; /* Taille maximale de l'image */
+  max-width: 100px; /* Taille maximale de l'image */
   margin-right: 10px;
 }
 
@@ -540,7 +549,7 @@ body {
 
 .rating {
   color: #f39c12;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 5px;
 }
 
@@ -548,14 +557,18 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 6px;
+  align-items: center;
 }
 
 .icons i {
-  font-size: 18px;
+  font-size: 20px;
   color: rgb(0, 214, 186);
   margin-right: 10px;
 }
 
+.icons i:hover {
+  transform: scale(1.1);
+}
 
 /* LIVRES TENDANCES */
 

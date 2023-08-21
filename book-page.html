@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="book-page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Details du Livre</title>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__content">
+      <div class="navbar__left">
+        <a href="#" class="navbar__menu-icon" id="menu-icon-open">
+          <i class="fas fa-bars"></i>
+        </a>
+        <a href="#" class="navbar__book-icon">
+          <i class="fas fa-book"></i>
+        </a>
+        <span class="navbar__lmd">Lireella</span>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" name="" placeholder="Rechercher ici" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <div class="navbar__right">
+        <a href="#" class="navbar__heart-icon">
+          <i class="fas fa-heart"></i>
+        <a href="login.html" class="navbar__user-icon">
+          <i class="fas fa-user"></i>
+        </a>
+      </div>
+    </div>
+      <div class="categories-container">
+        <div class="categories-slider" id="categoriesSlider">
+          <button class="category-button" onclick="scrollToSection('popular')"><i class="fas fa-fire"></i> <span>Populaires</span></button>
+          <button class="category-button" onclick="scrollToSection('selected-books')"><i class="fas fa-thumbs-up"></i> <span>Sélections</span></button>
+          <button class="category-button" onclick="scrollToSection('trends')"><i class="fas fa-chart-line"></i> <span>Tendances</span></button>
+          <button class="category-button" onclick="scrollToSection('news-arrivals')"><i class="fas fa-star"></i> <span>Nouveautés</span></button>
+          <button class="category-button"><i class="fas fa-shopping-cart"></i> <span>Blog</span></button>
+          <button class="category-button"><i class="fas fa-comment" onclick="scrollToSection('reviews')"></i> <span>Avis</span></button>
+          <button class="category-button" onclick="scrollToSection('services')"><i class="fas fa-headset"></i> <span>Services</span></button>
+        </div>
+      </div>
+      
+      <div class="navbar__menu">
+        <div class="menu-title">
+          <a href="#" class="navbar__menu-icon" id="menu-icon-close">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg>
+          </a>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="categories.html"><i class="fas fa-qrcode"></i>Catégories</a></li>
+            <li><a href="authors.html"><i class="fas fa-user"></i>Auteurs</a></li>
+            <li><a href="citations.html"><i class="fas fa-comment"></i>Citations</a></li>
+            <li><a href="contacts.html"><i class="fas fa-envelope"></i>Contacts</a></li>
+            <li><a href="about.html"><i class="fas fa-info"></i>About</a></li>
+          </ul>
+      </div>
+
+    </nav>  
+
+  <div class="container">
+    <header>
+      <!-- Barre de navigation, logo, etc. -->
+    </header>
+
+    <main class="book-details">
+      <div class="book-image">
+        <img src="images/book1.jpg" alt="Image de Couverture">
+      </div>
+      <div class="book-info">
+        <h1>Nom du Livre</h1>
+        <p>Auteur du Livre</p>
+        <p>01 Janvier 2023</p>
+        <div class="book-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"><span>4.5</span></i>
+        </div>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <p>Synopsis : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil hic odio nesciunt ipsa eum provident quasi alias dignissimos ducimus cum fugiat itaque architecto tempora harum perferendis rerum nulla, explicabo veritatis!</p>
+        <a href="#" class="btn-download">Télécharger</a>
+      </div>
+    </main>
+  </div>
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>Liens Rapides</h3>
+        <a href="#"><i class="fas fa-arrow-right"></i>Livres Populaires</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Tendances Littéraires</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Dernières Arrivées</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Nos Sélections</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Avis</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Blogs</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Services</a>
+      </div>
+
+      <div class="box">
+        <h3>Liens Extras</h3>
+        <a href="#"><i class="fas fa-arrow-right"></i>Notre Team</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Qui sommes nous ?</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>FAQ</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Politiques de Confidentialité</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>Conditions d'Utilisations</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>About</a>
+      </div>
+
+      <div class="box">
+        <h3>Contacts Infos</h3>
+        <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+        <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+        <a href="#"><i class="fas fa-envelope"></i>shaikanas@gmail.com</a>
+        <a href="#"><i class="fas fa-envelope"></i>johndoe@gmail.com</a>
+        <img src="images/world-map.jpg" class="map" alt="">
+      </div>
+    </div>
+
+    <div class="share">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-telegram"></i></a>
+    </div>
+
+    <div class="credit">created by <span>Mugiwara D Loufa</span>| All Rights Reserved!</div>
+
+  </section>
+
+  <script src="script.js"></script> <!-- Lier votre fichier script.js -->
+
+</body>
+</html>

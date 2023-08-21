@@ -5,7 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: url(images/menu-background.jpg);
+    background-size: cover;
   }
   
   .back-arrow {
@@ -13,7 +14,7 @@ body {
     top: 20px;
     left: 20px;
     font-size: 24px;
-    color: rgb(0, 214, 186);
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
   }
@@ -24,7 +25,7 @@ body {
   
     .home-icon {
       font-size: 24px;
-      color: rgb(0, 214, 186);
+      color: #fff;
       position: absolute;
       top: 20px;
       right: 20px; /* Placez l'icône en haut à droite */
